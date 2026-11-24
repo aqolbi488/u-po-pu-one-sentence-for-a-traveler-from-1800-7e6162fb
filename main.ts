@@ -1,12 +1,11 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-// One sentence explaining the modern internet to a traveler from 1800.
-// A single comparison carries it: one road joining every post office and
-// library on earth, so a letter reaches any door at once and any book
-// answers back before you can blink. Every word is one a person from
-// 1800 could know; nothing coined after their time.
+// Revision: "one road" (not "a single road") and "opens and answers you"
+// make the image tighter and the ending land sooner — the book itself
+// opens, so the traveler sees the answer, not just hears of it. The
+// sentence is one breath long and every word predates 1800.
 const SENTENCE =
-  "Picture a single road joining every post office and library on earth, so your letter reaches any door at once, and any book in the world answers you back before you can blink.";
+  "Picture one road joining every post office and library on earth, so your letter finds any door at once, and every book in the world opens and answers you before you blink.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", SENTENCE, "utf8");
